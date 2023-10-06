@@ -16,6 +16,7 @@ function comprimeimg() {
 }
 
 
-exports.default = compilaSass, com;
+exports.default = compilaSass;
 exports.img = comprimeimg
-exports.watch = function() {gulp.watch('./src/styles/*.scss', {ignoreInitial: false}, gulp.parallel(compilaSass))}
+
+exports.watch = function() {gulp.watch('./src/styles/*.scss', {ignoreInitial: false}, gulp.parallel(compilaSass, comprimeimg))}
