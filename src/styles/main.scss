@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'variaveis.scss';
+@use '_shows';
 
 @font-face {
     font-family: Avenir;
@@ -17,13 +18,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body{
-    background: variaveis.$bgColor;
-    font-family: Avenir, sans-serif;
-    
-    
+    background: variaveis.$bgColor;  
 }
 
 @mixin text ($fontSize: 16px) {
