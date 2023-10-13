@@ -144,7 +144,10 @@
         </div>
     </section>
     <section class="image-text-section--image-full-width">
-        <img src="dist/images/fundo_rei_leao.png" alt="tv desktop e celular">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" >
+            <img src="dist/images/fundo_rei_leao.png" alt="tv desktop e celular">
+        </picture>
         <div class="image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet</p>
@@ -284,6 +287,6 @@
         <p class="text--small">Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
         </div>
     </footer>
-    <script src="src/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
